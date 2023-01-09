@@ -1,20 +1,20 @@
 
 nikto
 =====
-[![alt text](https://cirt.net/images/patreon.png "Become a patron of Nikto!")](https://www.patreon.com/sullo)
+[![alt text](https://cirt.net/images/patreon.png "Become a patron of Nikto!")](https://www.patreon.com/Jaleeljb)
 
 
 Nikto web server scanner  - https://cirt.net/Nikto2
 
-Full documentation - https://github.com/sullo/nikto/wiki
+Full documentation - https://github.com/Jaleeljb/nikto-1/wiki
 
 Run normally:
 
 ~~~
-git clone https://github.com/sullo/nikto
+git clone https://github.com/Jaleeljb/nikto-1
 
 # Main script is in program/
-cd nikto/program
+cd nikto-1/program
 
 # Check out the 2.5.0 branch
 git checkout nikto-2.5.0
@@ -29,18 +29,18 @@ perl nikto.pl -h http://www.example.com
 Run as a Docker container:
 
 ~~~bash
-git clone https://github.com/sullo/nikto.git
-cd nikto
-docker build -t sullo/nikto .
+git clone https://github.com/Jaleeljb/nikto-1.git
+cd nikto-1
+docker build -t Jaleeljb/nikto-1 .
 
 # Call it without arguments to display the full help
-docker run --rm sullo/nikto
+docker run --rm Jaleeljb/nikto-1
 
 # Basic usage
-docker run --rm sullo/nikto -h http://www.example.com
+docker run --rm Jaleeljb/nikto-1 -h http://www.example.com
 
 # To save the report in a specific format, mount /tmp as a volume:
-docker run --rm -v $(pwd):/tmp sullo/nikto -h http://www.example.com -o /tmp/out.json
+docker run --rm -v $(pwd):/tmp Jaleeljb/nikto-1 -h http://www.example.com -o /tmp/out.json
 ~~~
 
 Basic usage:
